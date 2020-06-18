@@ -1,2 +1,4 @@
 .DS_Store
 /hwreadme
+/node_modules
+.env
