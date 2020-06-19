@@ -1,5 +1,27 @@
 // Browser routes back end code
+const router = require("express").Router();
+const Workout = require("../models/workout.js")
 
-const router = require("express");
+router.post("/api/workout", ({body}, res) => {
+    Workout.create(body)
+    .then(dbWorkout => {
+        res.json(dbWorkout);
+    })
+    .catch(err => {
+        res.status(400).json(err);
+    });
+});
 
-module.exports = router
+// router.get()
+// update put route
+
+// get route get all
+
+// get select range of workouts
+
+// delete route
+
+module.exports = router;
+
+
+
