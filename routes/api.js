@@ -14,6 +14,15 @@ router.post("/api/workout", ({body}, res) => {
 
 // router.get()
 // update put route
+router.put("/api/workout/:id", (req,res) =>{
+    Workout.findByIdAndUpdate(
+        req.params.id,
+        { $push: {ecercise: req.body}},
+        { new: true}
+    )
+    .then(workout => res.json(workout))
+    .catch(err => res.json(err));
+});
 
 // get route get all
 // router.get("/all")
