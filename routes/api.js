@@ -16,6 +16,7 @@ router.post("/api/workout", ({body}, res) => {
 // update put route
 
 // get route get all
+// router.get("/all")
 
 // get select range of workouts
 
