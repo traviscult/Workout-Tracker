@@ -3,6 +3,7 @@ const router = require("express").Router();
 const Workout = require("../models/workout.js")
 
 router.post("/api/workouts", ({body}, res) => {
+    console.log("is everything being grabbed!", {body})
     Workout.create(body)
     .then(dbWorkout => {
         res.json(dbWorkout);
@@ -22,15 +23,12 @@ router.get("/api/workouts", (req,res) =>{
 router.put("/api/workouts/:id", (req,res) =>{
     Workout.findByIdAndUpdate(
         req.params.id,
-        { $push: {ecercise: req.body}},
+        { $push: {exercises: req.body}},
         { new: true}
     )
     .then(workout => res.json(workout))
     .catch(err => res.json(err));
 });
-
-// get route get all
-// router.get("/all")
 
 // get select range of workouts
 router.get("/api/workouts/range", (req, res) => {
