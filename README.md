@@ -12,6 +12,8 @@ I created a workout tracking appliction utilizing a Mongo database with a Mongoo
 
 ## Demo
 
+![Workout Tracker Demo](Demo/Workout Demo.gif)
+
 ## Deployed Application Links
 
 https://workout-tracker-nosql-hw.herokuapp.com/
