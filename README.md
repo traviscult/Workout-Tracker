@@ -12,7 +12,7 @@ I created a workout tracking appliction utilizing a Mongo database with a Mongoo
 
 ## Demo
 
-![Workout Tracker Demo](Demo/Workout Demo.gif)
+![Workout Tracker Demo](Demo/WorkoutDemo.gif)
 
 ## Deployed Application Links
 
