@@ -4,7 +4,7 @@
 
 ## Overview 
 
-I created a workout tracking appliction utilizing a Mongo database with a Mongoose schema and handling the routes with Express.
+A workout tracking appliction utilizing a Mongo database with a Mongoose schema and handling the routes with Express.
 
 ## User Story
 
